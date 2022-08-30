@@ -1,16 +1,13 @@
 package com.example.capture.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
-
-@RestController
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+@Controller
 public class MainController {
 
-	@RequestMapping("/shareMonitor") // 컨트롤러 
-	public ModelAndView shareMonitor() { 
-		ModelAndView mv = new ModelAndView();
-		mv.setViewName("shareMonitor"); // shareMonitor.jsp 
-		return mv;	
+	@GetMapping("/shareMonitor") // 컨트롤러 
+	public String shareMonitor() { 
+		return "shareMonitor";	
+		
+		}
 	}
-}
