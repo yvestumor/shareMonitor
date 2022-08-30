@@ -11,6 +11,7 @@ import java.io.ByteArrayOutputStream;
 import javax.imageio.ImageIO;
 
 import org.apache.tomcat.util.codec.binary.Base64;
+import org.springframework.jmx.MBeanServerNotFoundException;
 import org.springframework.stereotype.Service;
 @Service 
 public class WebSocketService {
