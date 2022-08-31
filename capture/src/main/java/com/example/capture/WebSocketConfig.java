@@ -13,7 +13,7 @@ public class WebSocketConfig implements WebSocketConfigurer{
 	
 	@Autowired 
 	 SocketHandler socketHandler;
-
+	
 	@Override
 	public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) { //웹소켓 등록
 		registry.addHandler(socketHandler, "/streaming");
